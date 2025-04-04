@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>김보현의 포트폴리오</title>
+
+  <!-- 아이콘 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #2f3c3a;
+      color: #f3f1e9;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #3a3a34;
+      color: #f3f1e9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px;
+      background-color: #393f3a;
+      border-bottom: 1px solid #4e524f;
+    }
+
+    h2 {
+      border-bottom: 2px solid #c49b47;
+      padding-bottom: 10px;
+      color: #f3f1e9;
+    }
+
+    h3, h4 {
+      color: #ecd9b0;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #1f1f1d;
+      padding: 10px 0;
+      z-index: 999;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      color: #f3f1e9;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    .navbar a:hover {
+      color: #c49b47;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white !important;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+
+    .github-btn {
+      background-color: #403c3b;
+    }
+    .github-btn:hover {
+      background-color: #2f2b2a;
+    }
+
+    .email-btn {
+      background-color: #4d5c5c;
+    }
+    .email-btn:hover {
+      background-color: #374747;
+    }
+
+    .insta-btn {
+      background-color: #7b3f4b;
+    }
+    .insta-btn:hover {
+      background-color: #612f39;
+    }
+
+    .award-thumb {
+      width: 300px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      border: 2px solid #6e6a66;
+    }
+
+    .award-thumb:hover {
+      transform: scale(1.05);
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup img {
+      max-width: 80%;
+      max-height: 80%;
+      border: 4px solid #f3f1e9;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+      .pdf-btn {
+      background-color: #b45738;
+    }
+    .pdf-btn:hover {
+      background-color: #923c27;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>코드로 설계하고, 디테일로 완성합니다.</h1>
+    <p>C 기반 시스템 개발에 강점을 가진 개발자, 김보현</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      저는 "함께 성장하는 기업"을 가장 중요한 가치로 여깁니다.<br>
+      대학 시절 다양한 팀 프로젝트와 산학협력 프로젝트를 통해 협업의 중요성을 몸소 느꼈으며, 
+      실제로 손짓 인식을 기반으로 드론을 제어하는 시스템을 개발하며 실무적인 문제 해결 능력을 길렀습니다.<br>
+      책임감 있고 꼼꼼한 성격을 바탕으로 업무에 끝까지 몰입하며, 
+      팀원들과의 소통을 통해 효율적인 결과를 도출해내는 데 강점이 있습니다.<br>
+      저는 현장의 문제를 함께 해결하며 조직과 주변이 함께 발전할 수 있는 환경을 만드는 사람입니다.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML / CSS</li>
+      <li>Main language 'C'</li>
+      <li>Git / GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <h3>산학 프로젝트: 드론 펫 (Drone Pet)</h3>
+      <p>
+        - 주제: 손짓 인식을 통한 반응형 드론 제어 시스템<br>
+        - 기간: 4학년 2학기 2024년 7월 ~ 10월<br>
+        - 협력: 조선대학교 산학협력 과제<br>
+        - 사용 기술: C 언어, Python, 라즈베리, 제스처 센서, 시리얼 통신, OpenCV<br>
+        - 주요 역할: 손동작 인식 로직 설계 및 센서 데이터 기반 실시간 제어 구현<br>
+        - 성과: 손짓 명령에 따라 비행 방향 제어 가능, 시연 성공 및 기업 피드백 획득
+      </p>
+      <a class="contact-btn github-btn" href="https://github.com/GIMBOHYEON/Industry-Academic-Project-PetDrone" target="_blank">
+        <i class="fab fa-github"></i> GitHub 보기
+      </a>
+    </div>
+
+    <ul>
+      <li>사진 앨범 웹사이트 (Flask + MariaDB)</li>
+      <li>재무 대시보드 (HTML + JS + Chart.js)</li>
+    </ul>
+
+    <h3>진행 중인 프로젝트</h3>
+    <div>
+      <h4>스마트 주차장 시스템 (Smart Parking System) – 개발 중</h4>
+      <p>
+        공간 예약 시스템을 주차장에 적용하여 사용자 편의성과 공간 효율을 높이는 것을 목표로 하는 프로젝트입니다.<br>
+        센서를 활용해 실시간으로 주차 가능 여부를 감지하고, 웹 대시보드에서 주차 상태를 시각화하며, 사전 예약 기능까지 지원합니다.
+      </p>
+      <ul>
+        <li>실시간 주차 공간 감지 (초음파 센서 / 카메라 기반)</li>
+        <li>ESP32 + MQTT/HTTP 기반 데이터 전송</li>
+        <li>실시간 웹 대시보드 + 색상 구분 시각화</li>
+        <li>사전 예약 시스템: 등록된 차량 번호만 예약 공간 이용 가능</li>
+      </ul>
+      <p><strong>기대효과:</strong><br>
+        - 도시 내 주차 공간 활용도 향상 및 사용자 편의성 증대<br>
+        - 실시간 정보 제공으로 효율적인 주차 유도 및 관리자 부담 경감
+      </p>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Awards</h2>
+    <p>2019년 제9회 전국전문대학 IT융합전자회로 설계 및 제작 경진대회 – 동상 수상</p>
+    <img src="수상증명서.jpg" alt="수상증명서" class="award-thumb" onclick="openPopup(this.src)">
+    <div id="imagePopup" class="popup" onclick="closePopup()">
+      <img id="popupImg" src="">
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li>정보처리기사 (필기 준비 중)</li>
+      <li>웹디자인기능사 (필기 준비 중)</li>
+      <li>운전면허 1종 보통</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <a class="contact-btn pdf-btn" href="이력서.pdf" download>
+      <i class="fas fa-file-pdf"></i> 표준이력서
+    </a>
+    <h2>Contact</h2>
+    <a class="contact-btn github-btn" href="https://github.com/GIMBOHYEON" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a class="contact-btn email-btn" href="mailto:kbh7044@gmail.com">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a class="contact-btn insta-btn" href="https://www.instagram.com/bo_0dxx" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 김보현. All rights reserved.
+  </footer>
+
+  <script>
+    function openPopup(src) {
+      document.getElementById("popupImg").src = src;
+      document.getElementById("imagePopup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("imagePopup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
