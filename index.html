@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>김보현의 포트폴리오</title>
 
   <!-- 아이콘 CDN -->
@@ -54,6 +55,7 @@
     .navbar ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       margin: 0;
       padding: 0;
@@ -106,8 +108,16 @@
       background-color: #612f39;
     }
 
+    .pdf-btn {
+      background-color: #b45738;
+    }
+    .pdf-btn:hover {
+      background-color: #923c27;
+    }
+
     .award-thumb {
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
       cursor: pointer;
       transition: transform 0.2s;
       border: 2px solid #6e6a66;
@@ -137,11 +147,26 @@
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
-      .pdf-btn {
-      background-color: #b45738;
-    }
-    .pdf-btn:hover {
-      background-color: #923c27;
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar li {
+        margin: 10px 0;
+      }
+
+      .contact-btn {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+      }
+
+      section {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -235,11 +260,18 @@
     </div>
   </section>
 
+  <section id="growth">
+    <h2>Currently Learning</h2>
+    <ul>
+      <li></li>
+      <li>웹디자인기능사 필기(4월 예정)</li>
+      <li>정보처리기사 필기(5월 예정)</li>
+    </ul>
+  </section>
+  
   <section id="certificates">
     <h2>Certificates</h2>
     <ul>
-      <li>정보처리기사 (필기 준비 중)</li>
-      <li>웹디자인기능사 (필기 준비 중)</li>
       <li>운전면허 1종 보통</li>
     </ul>
   </section>
